@@ -297,20 +297,22 @@ iframe{
 .block2 a{ 
     width: 300px;
     height: 50px;
-    font-family: fantasy;
+    font-family: ;
+    white-space: nowrap;
     font-size: 30px;
     color: black;
     border: 3px solid black;
     border-radius: 300px;
-    padding-left: 25px;
+    padding-left: 4px;
     color: red;
     text-decoration-line: none;
-
 }
-.buttonforman{ 
+.buttonforman p{ 
+    font-family: 'Russo One', sans-serif;
+    
 }
 .buttonforman:hover{
-    text-decoration-line: none;
+    text-decoration: none;
     color: white;
     background: black;
 }
