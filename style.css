@@ -112,11 +112,12 @@
     opacity: 3px;
 }
 .header{
-    background-position: center center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     flex-flow: row wrap;
     position: relative;
+    margin-bottom: 120px;
 }
 .block0{ 
     width: 100%;
@@ -128,6 +129,7 @@
   justify-content: space-around;
     position: relative;
        background: url(image/block0.jpg);
+        background-size: cover;
        border: 4px solid wheat;
         border-radius: 80px;
     }
@@ -146,10 +148,12 @@
 .block3{
     display: flex;
     flex-direction: row;
-    margin-top: 60px;;
+    margin-top: 60px;
     flex-flow: row wrap;
   justify-content: space-around;   
-    margin-left: 18px;
+    border-bottom: 7px solid wheat;
+    border-width: 100%;
+    border-radius: 30px;
 }
 .block3 img{
     width: 660px;
@@ -158,7 +162,7 @@
     border-radius: 300px;
     filter: sepia(100%);
     margin-top: 80px;
-    
+    margin-left: 18px;
 }
 .clockh1{
     font-size: 70px;
@@ -197,7 +201,8 @@ iframe{
 .clocktable th{
     font-size: 30px;
     font-family: 'Prata', serif;
-    text-shadow: 0 0 2px;
+    text-shadow: 0 2px;
+    color: #ebbd68;
 }
 .h3main{
     text-align: center;
@@ -221,18 +226,9 @@ iframe{
     border: 5px solid wheat;
     border-radius: 900px;
 }
-.menubar{
-    min-width: 100%;
-    height: 100px;
-    opacity: 0.9;
-	border: 2px solid white;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-}
+
 .logo{
     width: 320px;
-	margin-left: 20px; 
-    margin-bottom: 10px;
 }
 .logo2{
     width: 300px;
@@ -246,25 +242,54 @@ iframe{
     right: 12%;
     top: 60px;
 }
-
-.menubar .nav-link{
+.nav-link {
     color: #7E5827;
 	font-size: 25px;
 	margin: 10px;
+    font-family: 'Lobster', cursive;
+    border: 3px solid wheat;
+    border-radius: 300px;
+}
+.navbar-brand p{
+    display: flex;
+    flex: 100%;
+    justify-items: center;
+    align-items: center;
+    margin-left: 300px;
+}
+.menubar{
+    width: 100%;
+    display: flex;
+    opacity: 0.9;
 }
 .nav-link{
-    font-family: 'Lobster', cursive;
-    font-size: 10px;
-    margin-top: 13px;
+    text-align: center;
+}
+.nav-link:hover{
+    background-color: white;
+}
+.logo{
+   display:flex;
+    justify-content: center; 
+    align-items: center;
 }
 .menutext{
-    margin-left: 40px;
+    padding-left: 40px;
 }
 .dropdown-menu a{
     background-color: #7E5827;
     font-family: 'Lobster', cursive;
-	font-size: 20px;
     color: black;
+}
+.search input{
+    text-align: center;
+}
+.search input, .search button{
+    white-space: nowrap;
+    
+}
+.menubar a{
+    white-space: nowrap;
 }
 .topimage{
 	width: 100%;
@@ -295,7 +320,7 @@ iframe{
     text-shadow: 5px 3px 15px white;
 }
 .block2 a{ 
-    width: 300px;
+    width: 360px;
     height: 50px;
     font-family: ;
     white-space: nowrap;
@@ -309,7 +334,7 @@ iframe{
 }
 .buttonforman p{ 
     font-family: 'Russo One', sans-serif;
-    
+    text-align: center;
 }
 .buttonforman:hover{
     text-decoration: none;
