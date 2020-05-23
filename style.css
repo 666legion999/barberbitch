@@ -4,7 +4,7 @@
 }
 .allcontainer{
 	max-width: 1920px;
-    min-width: 600px;
+    min-width: 800px;
 	background-image: url(image/first.jpg);
 }
 @media screen and (max-width: 360px) {
