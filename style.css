@@ -2,19 +2,34 @@
     margin: 0;
     padding: 0;
 }
-.body{
-}
 .allcontainer{
 	max-width: 1920px;
-    min-width: 600px;
+    min-width: 800px;
 	background-image: url(image/first.jpg);
+}
+@media screen and (max-width: 360px) {
+    .allcontainer{
+        width: 360px;
+    }
 }
 .block{
     display: flex;
     flex-direction: row;
-    margin-top: 60px;;
-    flex-flow: row wrap;
-  justify-content: space-around;     
+    margin-top: 60px;
+    flex-flow:row wrap;
+  justify-content: space-around;   
+    }
+@media screen and (max-width: 360px) {
+     .block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.beard{
+    align-items: center;
+    justify-items: center;
 }
 .footer{
     width: 100%;
@@ -29,7 +44,22 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-
+@media screen and (max-width: 360px){
+    .footer{
+ flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 800px){
+    .footer{
+ flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+}
 .footer div{
     width: 100%;
     display: flex;
@@ -37,6 +67,18 @@
 }
 .linkmenu{
     flex:20%;
+}
+@media screen and (max-width: 360px){
+    .linkmenu{
+    margin-left: -40px;
+    margin-top: -50px;
+    }
+}
+@media screen and (max-width: 800px){
+    .linkmenu{
+    margin-left: -40px;
+    margin-top: -50px;
+    }
 }
 .linkmenu a{
     width: 50px;
@@ -73,6 +115,7 @@
     font-size: 20px;
     letter-spacing: 3px;
 }
+
 .phone a, .mail a{
     color: white;
     text-decoration: none;
@@ -212,6 +255,11 @@ iframe{
     color: wheat;
     flex-grow: 1;
 }
+@media screen and (max-width: 360px) {
+    .h3main{
+        color: black;
+    }
+}
 .textforh3{
     width: 420px;
     text-align: center;
@@ -229,6 +277,7 @@ iframe{
 
 .logo{
     width: 320px;
+    justify-items: center;
 }
 .logo2{
     width: 300px;
@@ -250,20 +299,19 @@ iframe{
     border: 3px solid wheat;
     border-radius: 300px;
 }
-.navbar-brand p{
+.navbar-brand{
     display: flex;
-    flex: 100%;
-    justify-items: center;
     align-items: center;
-    margin-left: 300px;
 }
 .menubar{
-    width: 100%;
     display: flex;
     opacity: 0.9;
+    width: 100%;
 }
 .nav-link{
     text-align: center;
+    display: flex;
+    flex: 50%;
 }
 .nav-link:hover{
     background-color: white;
@@ -272,6 +320,8 @@ iframe{
    display:flex;
     justify-content: center; 
     align-items: center;
+    width: 100%;
+    height: 190px;
 }
 .menutext{
     padding-left: 40px;
@@ -318,6 +368,21 @@ iframe{
     color: black;
     text-align: right;
     text-shadow: 5px 3px 15px white;
+}
+@media screen and (max-width: 360px) {
+    .block2 h4{
+      text-align: center; 
+    }
+}
+@media screen and (max-width: 800px) {
+    .block2 h4{
+      text-align: center; 
+    }
+}
+@media screen and (max-width: 360px) {
+    .block2 h4{
+      text-align: center; 
+    }
 }
 .block2 a{ 
     width: 360px;
@@ -366,13 +431,4 @@ font-size: 15px;
 .navigation {
   display: flex;
 }
-@media all and (max-width: 800px) {
-  .block {
-    justify-content: space-around;
-  }
-}
-@media all and (max-width: 500px) {
-  .block {
-    flex-direction: column;
-  }
-}
+
