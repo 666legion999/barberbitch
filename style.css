@@ -9,7 +9,8 @@
 }
 @media screen and (max-width: 360px) {
     .allcontainer{
-        width: 800px;*{
+        width: 800px;
+	    *{
     margin: 0;
     padding: 0;
 }
